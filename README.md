@@ -30,16 +30,16 @@ In Logic Pro X:
     - You may need to click play on the project once for the Randomize button to work correctly
 
 ### Customise the melody to fit your needs
-* Choosing note lengths:
-- Choose the maximum and minimum note lengths you want to use from the drop down menus
-- ensure maxumum > minimum otherwise the melody will only use quater notes by default
+Choosing note lengths:
+* Choose the maximum and minimum note lengths you want to use from the drop down menus
+* ensure maxumum > minimum otherwise the melody will only use quater notes by default
 
-* Adding triplets, dotted notes or rests:
-- Just click on the respective checkboxes for these to include them
-- these notes will be in the range, that has been set with the maximum and minimum note length menus
+Adding triplets, dotted notes or rests:
+* Just click on the respective checkboxes for these to include them
+* these notes will be in the range, that has been set with the maximum and minimum note length menus
 
-* Skewing the randomised melody pitch and used note lengths
-This feature allows you to change the probability of what note pitches are played in the melody and what note lengths are used
+Skewing the randomised melody pitch and used note lengths
+ - This feature allows you to change the probability of what note pitches are played in the melody and what note lengths are used
 
 Pitch Skew
 - Skewing to the left increases the probability of notes on the lower end of the notes you've entered occuring in the melody, so creating a melody that is based more around the lower end of the scale you entered.
@@ -93,7 +93,7 @@ The Logic scripter is not very well documented, to develop it is recommended you
 
 Your Name – [@JoeRobotMusic](https://twitter.com/JoeRobotMusic) – joeyrc@hotmail.co.uk
 
-Distributed under version 2.0 of the Apache License. See ``LICENSE`` for more information.
+Distributed under version 2.0 of the Apache License. See ``http://www.apache.org/licenses/LICENSE-2.0`` for more information.
 
 An overview of the project has been provided on my YouTube channel: Coming Soon!
 
