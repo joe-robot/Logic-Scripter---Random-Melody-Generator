@@ -1,9 +1,6 @@
 # Logic Scripter - Random Melody Generator
 > This is a program built using the Logic X Midi Fx Scripter Plugin. It generates a random melody based on the notes you enter in and settings you set for the melody. 
 
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 This program It provides more customisability than the standard logic arpeggiator, in that it allows changing and specifying note lengths used, adding triplets, adding dotted notes, adding rests and skewing of melodies to fit your requirements. 
 
 This culminates in a tool that can be used to gain some inspiration to make a new song or get out of a rut with a song you have been working on for a while. 
@@ -109,10 +106,3 @@ An overview of the project has been provided on my YouTube channel: Coming Soon!
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/joe-robot/Logic-Scripter---Random-Melody-Generator/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://joe-robot-ci.org/Logic-Scripter---Random-Melody-Generator/node-datadog-metrics
