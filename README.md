@@ -43,7 +43,7 @@ Skewing the randomised melody pitch and used note lengths
 
 Pitch Skew
 - Skewing to the left increases the probability of notes on the lower end of the notes you've entered occuring in the melody, so creating a melody that is based more around the lower end of the scale you entered.
-- Skewing to the right increases the probability of notes on the higher end of the notes you;ve entered occuring in the melody, so creating a melody that is based more around the higher end of the scale you entered.
+- Skewing to the right increases the probability of notes on the higher end of the notes you've entered occuring in the melody, so creating a melody that is based more around the higher end of the scale you entered.
 
 Note Length Skew
 - Skewing to the left increases the probability of the shortest note lengths specified occuring in the melody, so creating a melody that uses shorter rhythms more often.
@@ -69,12 +69,12 @@ To do this:
 
 ## How it works
 
-The pitch is chosen by the melody generator is chosen using 2 factors, the generated random numbers and the current beat number. These 2 pieces of information are used in a equation to sample randomly from fourier series approximation a trianglar wave with increasing frequency (Figure 1). The triangular wave has a a minimum of 0 and maximum of the number of notes input, the sampled value is rounded to a whole number and this is used as the reference for the note pitch to use out of the notes input. The note length is selected similarly using the triangular wave but instead it is the amount of possible note lengths that are selected from. Changing the random seed means different points of the triangular wave are sampled so gving a different melody.
+The pitch is chosen by the melody generator using 2 factors, the generated random numbers and the current beat number. These 2 pieces of information are used in a equation, to sample randomly from fourier series approximation a trianglar wave with increasing frequency (Figure 1). The triangular wave has a a minimum of 0 and maximum of the number of notes input, the sampled value is rounded to a whole number and this is used as the reference for what note pitch to use out of the notes input. The note length is selected similarly using the triangular wave, but instead it is the amount of possible note lengths that are selected from. Changing the random seed means different points of the triangular wave are sampled from, so gving a different melody.
 
 ![](Figure1.png)
 Figure 1 - Triangular Wave used for random melody generating
 
-The skew feature works using a cosine wave with amplitude and position being dependant on the amount of skew set. The cosine wave dictates how many times each note is included in the random note generator, in that those toward the side that it is skewed, will appear multiple times in the possible notes array and so will be more likely to be selected in the generated melody. All notes have a base of occuring once in the note array as to ensure they can be included even if it is not as probable.
+The skew feature works using a cosine wave with amplitude and position being dependant on the amount of skew set. The cosine wave dictates how many times each note is included in the random note generator, in that those toward the side that it is skewed will appear multiple times in the possible notes array, and so will be more likely to be selected in the generated melody. All notes have a base of occuring once in the note array, as to ensure they can be included even if it is not as probable.
 
 Any other feature explanations are included in the comments in the code sufficently.
 
