@@ -331,11 +331,14 @@ function ParameterChanged (param, value) {      //Function called when a UI para
     switch(param)
     {
     case 1:
-            SetParameter('Rand1', Math.floor((Math.random()*100)+1));                           //If randomise button pressed randomise seeded numbers
-            SetParameter('Rand2', Math.floor((Math.random()*100)+1));
-            SetParameter('Rand3', Math.floor((Math.random()*100)+1));
-            randomNums= [GetParameter("Rand1"),GetParameter("Rand2"),GetParameter("Rand3")];
-            SetParameter('Randomize', 0);               //Reset checkbox (so it acts like a push button)
+            if(GetParameter("Randomize"))
+            {
+                SetParameter('Rand1', Math.floor((Math.random()*100)+1));                           //If randomise button pressed randomise seeded numbers
+                SetParameter('Rand2', Math.floor((Math.random()*100)+1));
+                SetParameter('Rand3', Math.floor((Math.random()*100)+1));
+                randomNums= [GetParameter("Rand1"),GetParameter("Rand2"),GetParameter("Rand3")];
+                SetParameter('Randomize', 0);               //Reset checkbox (so it acts like a push button)
+                }
     case 2:
             newMinMax=1;        //If min note length changed set new min max parameter for calculations
     case 3:
@@ -364,4 +367,4 @@ var PluginParameters = [
 {name:"Remove Synth Slide", defaultValue:0,type:"checkbox"},
 {name:"Output Notes To Terminal", defaultValue:0,type:"checkbox"}
 ];
-
+    
