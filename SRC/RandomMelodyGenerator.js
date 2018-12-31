@@ -142,8 +142,13 @@ function ProcessMIDI()            //Process MIDI function called one per process
         {
             // calculate beat to schedule
             var lookAheadEnd = info.blockEndBeat;    //Check end of buffer
-            var nextBeat = Math.ceil(info.blockStartBeat * 64) / 64;    //Calculate next beat
-            
+            if(GetParameter("Triplets"))
+            {
+                var nextBeat = Math.ceil(info.blockStartBeat * 64*3) / (64*3); //If including triplets ensure divisions of 3 exist
+            }
+            else{
+                var nextBeat = Math.ceil(info.blockStartBeat * 64) / 64;    //Calculate next beat
+            }
             // when cycling, find the beats that wrap around the last buffer
             if (info.cycling && lookAheadEnd >= info.rightCycleBeat) {                    //If cycling activated and end beat is bigger than the end cycling beat
                 var cycleBeats = info.rightCycleBeat - info.leftCycleBeat;        //Calculating how many beats in the cycle
@@ -231,7 +236,13 @@ function ProcessMIDI()            //Process MIDI function called one per process
                 }
                 // advance to next beat
                 nextBeat += 0.001;    //Update next beat
-                nextBeat = Math.ceil(nextBeat *64) / 64  ;    //Update next beat for divisions
+                if(GetParameter("Triplets"))
+                {
+                    nextBeat = Math.ceil(nextBeat *64*3) / (64*3)  ;    //If including triplets ensure divisions by 3 exist
+                }
+                else{
+                    nextBeat = Math.ceil(nextBeat *64) / 64  ;    //Update next beat for divisions
+                }
             }
             
             
@@ -367,3 +378,5 @@ var PluginParameters = [
                         {name:"Remove Synth Slide", defaultValue:0,type:"checkbox"},
                         {name:"Output Notes To Terminal", defaultValue:0,type:"checkbox"}
                         ];
+
+
