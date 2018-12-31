@@ -88,6 +88,7 @@ The Logic scripter is not very well documented, to develop it is recommended you
 *1.0.2
     *Bug Fix - Issue with 1/16th and 1/64th standard notes not processing correctly fixed
     *Added note number to terminal output
+    *Improved Triplet Calculations
 
 *1.0.1
     * Bug Fix
