@@ -85,6 +85,10 @@ To develop just edit the javascript code using the 'Open Script In Editor' butto
 The Logic scripter is not very well documented, to develop it is recommended you look up the 'Simple Arpeggiator' or 'Sequencer' examples and the 'Tutorial Scripts' that are given in Logic. If you are unsure on anything send me an email (given below).
 
 ## Release History
+*1.0.2
+    *Bug Fix - Issue with 1/16th and 1/64th standard notes not processing correctly fixed
+    *Added note number to terminal output
+
 *1.0.1
     * Bug Fix
 
