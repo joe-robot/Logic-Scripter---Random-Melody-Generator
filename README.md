@@ -102,7 +102,7 @@ Your Name – [@JoeRobotMusic](https://twitter.com/JoeRobotMusic) – joeyrc@hot
 
 Distributed under version 2.0 of the Apache License. See ``http://www.apache.org/licenses/LICENSE-2.0`` for more information.
 
-An overview of the project has been provided on my YouTube channel: Coming Soon!
+An overview of the project has been provided on my YouTube channel: [Here](https://youtu.be/4UHhFVkb_Hs)
 
 [https://github.com/joe-robot/Logic-Scripter---Random-Melody-Generator](https://github.com/joe-robot/Logic-Scripter---Random-Melody-Generator)
 
